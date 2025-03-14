@@ -2,16 +2,17 @@
 
 **VPN Remove and Reinstall* 
 ================================================
-TOOL BASED ON 
-**Here's a Python script that automates the process of removing existing
-VPN configurations and installing a full IPsec VPN using the setup script from the GitHub repository.*
-**Features:**
+
+## Here's a Python script that automates the process of removing existing
+VPN configurations and installing a full IPsec VPN using the setup script from the GitHub repository.##
+
+### Features:###
 1. *Prompts the user for confirmation before removing existing VPN configurations.*
 2. *Stops and removes VPN-related services (ipsec, xl2tpd, strongswan, etc.).*
 3. *Removes old VPN configurations and directories.*
 4. *Installs the full VPN setup from the provided GitHub repository.*
 
-** Script: vpn_reinstall.py **
+### Script: vpn_reinstall.py ###
 ```
 #!/usr/bin/python3
 import os
@@ -72,14 +73,14 @@ def main():
         print("VPN installation completed.")
 
 ```    print("\nProcess finished.")
-```
+
 if __name__ == "__main__":
     main()
 ```
    
-How to Use the Script
-Save the script as vpn_reinstall.py on your Ubuntu server.
-Give it execute permissions:
+### How to Use the Script ###
+**Save the script as vpn_reinstall.py on your Ubuntu server.**
+**Give it execute permissions**:
 ```
 chmod +x vpn_reinstall.py
 ```
@@ -87,11 +88,14 @@ chmod +x vpn_reinstall.py
 ```
 sudo python3 vpn_reinstall.py
 ```
-What This Script Does
-Checks with the user before proceeding with any action.
+## **What This Script Does:** ##
+**Checks with the user before proceeding with any action.
 Stops and removes any existing VPN services and configurations.
 Deletes VPN-related files and clears iptables.
 Downloads and installs the full IPsec VPN setup from hwdsl2 GitHub repo.
-This ensures a clean removal of previous VPN configurations and reinstallation of a fresh VPN setup.
+**
+*This ensures a clean removal of previous VPN configurations and reinstallation of a fresh VPN setup.*
+
+#### Thank you for participating ####
 
 Would you like any modifications or additional features? 🚀
